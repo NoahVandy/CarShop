@@ -38,6 +38,7 @@
             this.txtbx_model = new System.Windows.Forms.TextBox();
             this.txtbx_price = new System.Windows.Forms.TextBox();
             this.lbl_price = new System.Windows.Forms.Label();
+            this.lbl_totalPrice = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lstbx_cars
@@ -128,12 +129,22 @@
             this.lbl_price.TabIndex = 8;
             this.lbl_price.Text = "Price:";
             // 
+            // lbl_totalPrice
+            // 
+            this.lbl_totalPrice.AutoSize = true;
+            this.lbl_totalPrice.Location = new System.Drawing.Point(1222, 547);
+            this.lbl_totalPrice.Name = "lbl_totalPrice";
+            this.lbl_totalPrice.Size = new System.Drawing.Size(87, 32);
+            this.lbl_totalPrice.TabIndex = 10;
+            this.lbl_totalPrice.Text = "$0.00";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1802, 655);
+            this.Controls.Add(this.lbl_totalPrice);
             this.Controls.Add(this.txtbx_price);
             this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.txtbx_model);
@@ -163,6 +174,7 @@
         private System.Windows.Forms.TextBox txtbx_model;
         private System.Windows.Forms.TextBox txtbx_price;
         private System.Windows.Forms.Label lbl_price;
+        private System.Windows.Forms.Label lbl_totalPrice;
     }
 }
 

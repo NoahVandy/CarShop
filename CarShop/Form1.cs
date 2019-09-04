@@ -60,6 +60,14 @@ namespace CarShop
 
             lstbx_cart.DataSource = cartMirror;
 
+            double totalPrice = 0.00;
+            foreach (Car item in cartMirror)
+            {
+                totalPrice = totalPrice + item.price;
+            }
+
+            lbl_totalPrice.Text = "$" + totalPrice.ToString();
+
 
             
 
